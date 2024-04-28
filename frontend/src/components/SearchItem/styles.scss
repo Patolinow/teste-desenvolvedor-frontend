@@ -1,0 +1,38 @@
+tr {
+
+  &:nth-of-type(10) td{
+    border-bottom: none;
+  }
+
+
+  td {
+    text-wrap: wrap;
+    text-align: center;
+    vertical-align: middle;
+
+    a {
+      color: var(--primary-color);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    img {
+      height: 30px;
+    }
+  }
+
+  &:hover td {
+    background-color: #f1f7e8;
+  }
+
+  .published-date {
+    min-width: 129px;
+  }
+
+  .patient, .professional {
+    p {
+      margin-bottom: 0;
+      font-size: 12px;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.pagination li{
+  
+  a {
+    color: var(--primary-color);
+
+    &:hover {
+      color: var(--primary-color);
+    }
+  }
+
+  &.active span {
+    
+      background-color: var(--primary-color);
+      border-color: var(--primary-color);
+
+  }
+}

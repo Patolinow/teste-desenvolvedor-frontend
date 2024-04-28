@@ -1,0 +1,36 @@
+table.table {
+  border: 1px solid var(--gray-100);
+  table-layout: fixed;
+  min-height: 692px;
+  overflow: auto;
+
+  tbody {
+    display: block;
+    width: 1080px;
+  }
+
+  & {
+    width: 1080px;
+  }
+
+  .medicine {
+    width: 340px;
+  }
+
+  .company {
+    width: 482px;
+  }
+
+  .published-at {
+    width: 108px;
+  }
+
+  .leaftlets {
+    width: 134px;
+  }
+
+  th {
+    border: 1px solid var(--gray-100);
+    height: 41px;
+  }
+}
