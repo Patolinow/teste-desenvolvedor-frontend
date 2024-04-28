@@ -1,0 +1,46 @@
+main .container:has(form) {
+  border: 8px solid var(--gray-100);
+
+  form {
+
+    input:focus {
+      border-color: var(--primary-color);
+      box-shadow: 0 0 0 5px color-mix(in hsl, transparent 75% ,var(--primary-color));
+    }
+
+    button {
+      width: 100%;
+      transition: 0.15s;
+      color: var(--white);
+      background-color: var(--primary-color);
+      border-color: var(--primary-color);
+
+      &:hover, &:focus {
+        filter: brightness(1.1);
+        background-color: var(--primary-color);
+        border-color: var(--primary-color);
+      }
+
+      &:active {
+        filter: brightness(1);
+        background-color: var(--primary-color) !important;
+        border-color: var(--primary-color) !important;
+      }
+
+      &:disabled {
+        background-color: color-mix( in hsl, var(--primary-color) 75% , var(--gray-200));
+        border-color: var(--gray-100);
+      }
+
+      &:focus {
+        box-shadow: 0 0 0 5px color-mix(in hsl, transparent 50% ,var(--primary-color));
+      }
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    max-width: 740px;
+
+    
+  }
+}
