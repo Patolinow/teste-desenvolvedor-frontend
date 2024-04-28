@@ -1,0 +1,35 @@
+header {
+  background-color: var(--white);
+  position: fixed;
+  width: 100%;
+
+  nav {
+    max-width: 1140px;
+    font-size: 14px;
+
+    img {
+      height: 35px;
+    }
+
+    a.nav-link {
+      color: var(--black);
+
+      &:hover {
+        color: var(--primary-color);
+      }
+    }
+
+    a#navbarScrollingDropdown {
+      color: var(--primary-color);
+
+      &:hover::after {
+        color: var(--primary-color);
+      }
+
+      &::after {
+        color: var(--black);
+        transition: 0.15s ease-in-out;
+      }
+    }
+  }
+}
