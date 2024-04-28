@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-@import 'bootstrap/scss/bootstrap';
+@import './custom.scss';
+
 
 :root {
   --primary-color: #86bc42;
@@ -9,18 +10,17 @@
   --gray-300: #939393;
   --gray-400: #6f6f6f;
   --gray-500: #616161;
-  --gray-600: #1f1f1f;
-  --black: #232323;
-
-  font-family: "Work Sans", "Open Sans", sans-serif;
-  color: var(--black);
-  background-color: var(--white);
+  --gray-600: #232323;
+  --black: #1f1f1f;
+  --bs-font-sans-serif: "Work Sans", "Open Sans", sans-serif;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+
 
 * {
   box-sizing: border-box;
